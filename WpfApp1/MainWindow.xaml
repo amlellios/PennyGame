@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="259*"/>
+            <ColumnDefinition Width="258*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="183*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="68*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="PlayerPennyTails" Margin="61,30,57,10" Source="2010-Penny-unc-rev.jpg" Stretch="Fill"/>
+        <Image x:Name="PlayerPennyHeads" Margin="63,30,57,12" Source="lincoln_penny_obverse1.jpg" Stretch="Fill"/>
+        <Button x:Name="Play" Content="PLAY!" HorizontalAlignment="Left" Height="39" Margin="61,10,0,0" VerticalAlignment="Top" Width="139" Grid.Row="2" Click="Play_Click"/>
+        <Button x:Name="Heads" Content="Heads" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" Click="Heads_Click"/>
+        <Button x:Name="Tails" Content="Tails" HorizontalAlignment="Left" Height="48" Margin="150,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" Click="Tails_Click"/>
+        <TextBlock x:Name="Player_1" HorizontalAlignment="Left" Height="15" Margin="96,10,0,0" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top" Width="77" TextAlignment="Center"/>
+        <TextBlock x:Name="Computer" HorizontalAlignment="Left" Height="15" Margin="86,10,0,0" TextWrapping="Wrap" Text="Computer" VerticalAlignment="Top" Width="77" Grid.Column="1" TextAlignment="Center"/>
+        <Image x:Name="ComputerPennyHeads" Margin="60,30,59,12" Source="lincoln_penny_obverse1.jpg" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="ComputerPennyTails" Margin="60,30,57,10" Source="2010-Penny-unc-rev.jpg" Stretch="Fill" Grid.Column="1"/>
+        <TextBlock x:Name="Score" Grid.Column="1" HorizontalAlignment="Left" Height="17" Margin="86,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="77" FontWeight="Bold" TextAlignment="Center" Background="White"/>
+        <TextBlock x:Name="Player" Grid.Column="1" HorizontalAlignment="Left" Height="17" Margin="24,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Player" VerticalAlignment="Top" Width="71" FontWeight="Bold" TextAlignment="Center" IsHitTestVisible="False"/>
+        <TextBlock x:Name="Computer1" Grid.Column="1" HorizontalAlignment="Left" Height="17" Margin="171,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Computer" VerticalAlignment="Top" Width="77" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="PlayerScore" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="10,27,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Background="#FFFFD4D4" Text="10" TextAlignment="Center"/>
+        <TextBlock x:Name="ComputerScore" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="163,27,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Background="#FFFFD4D4" TextAlignment="Center"><Run Text="10"/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Window>
